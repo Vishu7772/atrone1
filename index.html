@@ -5,53 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atrone - Bot Development</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to Atrone</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Atrone</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Atrone</h2>
-        <p>Atrone is your go-to platform for bot development. We provide resources, tutorials, and tools to help you create amazing bots.</p>
+    <section class="hero">
+        <div class="container">
+            <h2>Transforming Bot Development</h2>
+            <p>Innovative solutions for your bot needs.</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </div>
     </section>
 
-    <section id="resources">
-        <h2>Bot Development Resources</h2>
-        <ul>
-            <li><a href="#">Getting Started with Bot Development</a></li>
-            <li><a href="#">Popular Bot Frameworks</a></li>
-            <li><a href="#">Best Practices for Bot Development</a></li>
-        </ul>
-    </section>
+    <main class="container">
+        <section id="about">
+            <h2>About Atrone</h2>
+            <p>Atrone is your go-to platform for bot development. We provide resources, tutorials, and tools to help you create amazing bots.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Custom Bot Development</h3>
+                <p>Tailored solutions to meet your specific needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Consultation</h3>
+                <p>Expert advice to guide your bot strategy.</p>
+            </div>
+            <div class="service-card">
+                <h3>Support & Maintenance</h3>
+                <p>Ongoing support to ensure your bots run smoothly.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2023 Atrone. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="3d-script.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
